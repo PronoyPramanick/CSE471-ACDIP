@@ -1,0 +1,15 @@
+# Python virtual environment
+.venv/
+
+# Environment variables and secrets
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local database files
+*.db
+
+# Flask instance folder
+instance/
