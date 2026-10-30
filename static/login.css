@@ -1,0 +1,100 @@
+:root{font-family:Inter,'Segoe UI',Arial,sans-serif;color:#10243d;background:#f3f6f8;font-synthesis:none;text-rendering:optimizeLegibility;font-optical-sizing:auto;font-weight:400;--navy:#10243d;--muted:#71839a;--green:#11966c;--blue:#1765c4}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh}
+.login-layout{min-height:100vh;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(490px,.92fr)}
+.story-panel{position:relative;isolation:isolate;min-height:100vh;color:#fff;background:#0b273a url('/static/images/disaster-response.jpg') center 48%/cover no-repeat}
+.story-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,29,45,.83),rgba(7,29,45,.48) 60%,rgba(7,29,45,.32)),linear-gradient(0deg,rgba(4,19,31,.58),transparent 55%)}
+.story-content{min-height:100vh;max-width:790px;margin:auto;padding:clamp(36px,6vw,82px) clamp(36px,7vw,100px) 38px;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:17px;color:inherit;text-decoration:none;width:max-content}
+.brand-mark{width:67px;height:74px;display:grid;place-items:center;color:#fff;flex:none}
+.brand-mark svg{width:100%;height:100%}
+.brand strong{display:block;font-size:clamp(30px,3.2vw,46px);font-weight:800;letter-spacing:.055em;line-height:1}
+.brand small{display:block;margin-top:8px;font-size:16px;line-height:1.45;color:rgba(255,255,255,.9)}
+.story-copy{margin:auto 0 39px;padding-top:62px}
+.eyebrow{margin:0 0 13px;font-size:11px;font-weight:700;letter-spacing:.19em;color:#38d5a1}
+.story-copy h1{margin:0;font-size:clamp(32px,3.6vw,51px);line-height:1.28;letter-spacing:-.035em;font-weight:700}
+.story-copy h1 em{font-style:normal;color:#30d09d}
+.story-description{max-width:430px;margin:22px 0 0;color:rgba(255,255,255,.84);font-size:16px;line-height:1.75}
+.service-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;text-align:center;margin-bottom:34px}
+.service-list>div{display:flex;align-items:center;flex-direction:column;gap:10px;font-size:12px;line-height:1.45;color:rgba(255,255,255,.94)}
+.service-icon{width:49px;height:49px;border-radius:50%;display:grid;place-items:center;background:#0d9a70;color:#fff;font-size:27px;font-weight:500;box-shadow:0 8px 24px #061d2b66}
+.location{margin:0;font-size:12px;color:rgba(255,255,255,.9)}
+.location span{font-size:10px;color:#fff;margin-right:7px}
+.form-panel{display:grid;place-items:center;padding:42px 34px;background:radial-gradient(ellipse at 70% 15%,#fff 0,#f6f8fb 65%,#eef2f6 100%)}
+.login-card{width:min(100%,520px);padding:clamp(28px,4vw,54px);border:1px solid #e9edf2;border-radius:17px;background:rgba(255,255,255,.89);box-shadow:0 22px 65px rgba(33,58,82,.09)}
+.mobile-brand{display:none}
+.form-eyebrow{color:#128c69;margin-bottom:9px}
+.login-card h2{margin:0;font-size:34px;letter-spacing:-.04em;line-height:1.2;color:#10243d}
+.intro{margin:11px 0 27px;color:#71839a;font-size:15px;line-height:1.65}
+form>label{display:block;margin:17px 0 8px;font-size:14px;font-weight:600;color:#182b43}
+.input-wrap{height:52px;display:flex;align-items:center;gap:12px;border:1px solid #d6e0eb;border-radius:8px;padding:0 14px;background:#fff;transition:border-color .18s,box-shadow .18s}
+.input-wrap:focus-within{border-color:#18966f;box-shadow:0 0 0 3px rgba(17,150,108,.11)}
+.input-wrap>svg{width:20px;height:20px;flex:none;fill:none;stroke:#657b94;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.input-wrap input{width:100%;height:100%;border:0;outline:0;background:transparent;font:inherit;font-size:14px;color:#14283f}
+.input-wrap input::placeholder{color:#9aa8ba}
+.show-password{display:grid;place-items:center;padding:5px;border:0;background:none;color:#667b94;cursor:pointer}
+.show-password svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.form-options{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:18px 0 25px;font-size:12px}
+.form-options a{color:#1765c4;text-decoration:none;font-weight:600}
+.remember{display:flex;align-items:center;gap:8px;cursor:pointer}
+.remember input{width:17px;height:17px;margin:0;accent-color:#11966c}
+.submit-button{width:100%;height:52px;display:flex;justify-content:center;align-items:center;gap:9px;border:0;border-radius:8px;background:linear-gradient(100deg,#11966c,#118b66);color:#fff;font:inherit;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 8px 17px rgba(17,150,108,.16);transition:filter .18s,transform .18s}
+.submit-button:hover{filter:brightness(1.04);transform:translateY(-1px)}
+.submit-button span{font-size:21px;line-height:1}
+.divider{height:47px;display:flex;align-items:center;gap:14px;color:#91a0b3;font-size:12px;text-transform:uppercase}
+.divider:before,.divider:after{content:"";height:1px;flex:1;background:#e0e6ed}
+.create-account{height:46px;display:flex;align-items:center;justify-content:center;gap:9px;border:1px solid #d7e0ea;border-radius:8px;color:#1765c4;text-decoration:none;font-size:13px;font-weight:600;background:#fff}
+.create-account span{font-size:20px}
+.role-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px}
+.role-grid>div{display:flex;align-items:center;flex-direction:column;text-align:center;padding:0 5px}
+.role-grid>div+div{border-left:1px solid #e1e7ed}
+.role-symbol{height:30px;display:grid;place-items:center;margin-bottom:7px;font-size:20px}
+.role-symbol.citizen{color:#11966c}.role-symbol.volunteer{color:#1765c4;font-size:14px;letter-spacing:-4px;padding-right:4px}.role-symbol.admin{color:#8651c9}
+.role-grid strong{font-size:12px;font-weight:600}
+.role-grid small{margin-top:6px;color:#7c8da4;font-size:11px;line-height:1.5}
+.secure-note{margin:25px 0 0;text-align:center;color:#8493a5;font-size:11px}
+.secure-note span{color:#11966c;margin-right:4px}
+.notice{padding:11px 13px;margin:0 0 16px;border-radius:7px;font-size:13px;line-height:1.5}
+.notice.error{color:#9f2d31;background:#fff0f0;border:1px solid #f6d2d2}
+.notice.success{color:#176b4f;background:#eaf8f2;border:1px solid #c9ecdc}
+.register-layout{grid-template-columns:minmax(0,.92fr) minmax(600px,1.08fr)}
+.register-story .story-shade{background:linear-gradient(90deg,rgba(7,29,45,.68),rgba(7,29,45,.28) 75%),linear-gradient(0deg,rgba(4,19,31,.65),transparent 58%)}
+.register-story-copy{margin:auto 0;padding-top:40px}
+.register-story-copy h1{font-size:clamp(32px,3.4vw,48px)}
+.register-panel{padding:22px clamp(20px,3.2vw,50px)}
+.register-card{width:min(100%,760px);padding:clamp(25px,3vw,42px);border:1px solid #e7edf2;border-radius:16px;background:rgba(255,255,255,.91);box-shadow:0 22px 65px rgba(33,58,82,.09)}
+.register-heading{display:flex;align-items:center;gap:18px;margin:0 0 21px}
+.register-avatar{width:62px;height:62px;display:grid;place-items:center;flex:none;border-radius:50%;background:#e5f4ef;color:#11966c}
+.register-avatar svg{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.register-heading h1{margin:0;color:#102d4c;font-size:clamp(24px,2.5vw,34px);letter-spacing:-.035em;line-height:1.2}
+.register-heading p{margin:6px 0 0;color:#71839a;font-size:14px}
+.register-card form>label,.volunteer-id-field>label{margin:12px 0 6px;font-size:13px}
+.register-card .input-wrap{height:46px}
+.register-card .input-wrap input{font-size:13px}
+.register-card .input-wrap>svg{width:19px;height:19px}
+.register-card .show-password{font-size:18px;line-height:1}
+.role-picker{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 0;padding:0;border:0}
+.role-picker legend{grid-column:1/-1;margin:0 0 0;padding:0;font-size:13px;font-weight:600;color:#182b43}
+.role-choice{position:relative;min-height:93px;display:flex;align-items:center;gap:12px;padding:13px 15px;border:1px solid #d9e2ec;border-radius:9px;background:#fff;cursor:pointer;transition:border-color .16s,background .16s,box-shadow .16s}
+.role-choice.selected{border-color:#159b70;background:#eff9f5;box-shadow:0 0 0 1px #159b7022}
+.role-choice>input{width:17px;height:17px;flex:none;margin:0;accent-color:#11966c}
+.role-choice-icon{width:34px;flex:none;text-align:center;font-size:21px}
+.role-choice-icon.citizen{color:#11966c}.role-choice-icon.volunteer{color:#1765c4;font-size:14px;letter-spacing:-4px;padding-right:4px}
+.role-choice-copy{display:flex;flex-direction:column;gap:3px}
+.role-choice-copy strong{font-size:13px;color:#17324e}
+.role-choice-copy small{font-size:11px;line-height:1.35;color:#7b8da4}
+.volunteer-id-field{margin-top:2px}
+.volunteer-id-field[hidden]{display:none}
+.field-hint{width:19px;height:19px;display:grid;place-items:center;flex:none;border:1.5px solid #70849d;border-radius:50%;color:#70849d;font-size:12px;font-weight:700}
+.register-submit{margin-top:17px;height:48px;font-size:15px;text-transform:none}
+.register-login{margin:17px 0 0;text-align:center;color:#788ba3;font-size:12px}
+.register-login a{margin-left:5px;color:#11966c;text-decoration:none;font-weight:700}
+.dashboard-page{display:grid;place-items:center;padding:24px;background:linear-gradient(140deg,#eef4f5,#f6f8fb)}
+.dashboard-card{width:min(100%,560px);padding:44px;border:1px solid #e6ecf0;border-radius:18px;background:white;box-shadow:0 20px 55px #19375014}
+.dashboard-brand{color:#10243d;margin-bottom:42px}.dashboard-brand .brand-mark{width:48px;height:48px;color:#11966c;font-size:35px}.dashboard-brand strong{font-size:24px}.dashboard-brand small{color:#71839a;font-size:12px;margin-top:5px}
+.dashboard-card h1{margin:0 0 12px;font-size:32px;letter-spacing:-.04em}.dashboard-card>p:not(.eyebrow){color:#71839a;line-height:1.7;margin:0 0 26px}.dashboard-card .submit-button{margin-top:22px}
+@media(max-width:900px){.login-layout{grid-template-columns:minmax(0,1fr) minmax(420px,.92fr)}.story-content{padding-left:38px;padding-right:38px}.brand-mark{width:54px;height:60px}.brand strong{font-size:32px}.brand small{font-size:13px}.story-copy h1{font-size:36px}.form-panel{padding:25px 20px}.login-card{padding:32px}}
+@media(max-width:1000px){.register-layout{grid-template-columns:minmax(0,.72fr) minmax(520px,1.28fr)}.register-panel{padding:18px}.register-card{padding:25px}}
+@media(max-width:700px){.login-layout{display:block}.story-panel{min-height:350px}.story-content{min-height:350px;padding:25px 25px 23px}.brand-mark{width:44px;height:49px}.brand{gap:11px}.brand strong{font-size:25px}.brand small{font-size:11px;margin-top:5px}.story-copy{padding-top:34px;margin:0 0 22px}.story-copy .eyebrow{margin-bottom:8px}.story-copy h1{font-size:clamp(25px,7vw,35px);line-height:1.2}.story-description{display:none}.service-list{max-width:450px;margin:0 0 15px;gap:5px}.service-list>div{font-size:10px;gap:5px}.service-icon{width:35px;height:35px;font-size:20px}.location{font-size:10px}.form-panel{padding:26px 16px 40px}.login-card{width:min(100%,480px);padding:28px 23px;box-shadow:none}.mobile-brand{display:flex;align-items:center;gap:8px;margin-bottom:22px;color:#10243d}.mobile-brand .brand-mark{display:grid;place-items:center;width:34px;height:34px;color:#11966c;font-size:24px}.mobile-brand strong{font-size:17px;letter-spacing:.06em}.login-card h2{font-size:29px}.intro{margin-bottom:22px}.role-grid{margin-top:25px}.secure-note{margin-top:20px}}
+@media(max-width:700px){.register-story{min-height:300px}.register-story .story-content{min-height:300px}.register-story-copy{padding-top:27px;margin:0 0 15px}.register-story-copy h1{font-size:30px}.register-panel{padding:20px 12px 32px}.register-card{padding:23px 19px;box-shadow:none}.register-heading{gap:12px;margin-bottom:18px}.register-avatar{width:48px;height:48px}.register-avatar svg{width:27px;height:27px}.register-heading h1{font-size:24px}.register-heading p{font-size:12px}.role-picker{gap:8px}.role-choice{min-height:90px;gap:7px;padding:10px 8px}.role-choice>input{width:15px;height:15px}.role-choice-icon{width:27px;font-size:18px}.role-choice-copy strong{font-size:12px}.role-choice-copy small{font-size:10px}}
+@media(max-width:380px){.story-panel,.story-content{min-height:330px}.story-copy h1{font-size:25px}.login-card{padding:25px 19px}.form-options{font-size:11px}}

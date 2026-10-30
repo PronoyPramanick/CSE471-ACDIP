@@ -69,6 +69,7 @@ DB_PASSWORD=
 
 ### 7. Run the Application
 ```bash
+flask --app app db upgrade
 python app.py
 ```
 

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your dashboard | SURAKSHA</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body class="dashboard-page">
+  <main class="dashboard-card">
+    <a class="brand dashboard-brand" href="{{ url_for('dashboard') }}"><span class="brand-mark" aria-hidden="true">⌂</span><span><strong>SURAKSHA</strong><small>Disaster Management System</small></span></a>
+    <p class="eyebrow form-eyebrow">COMMUNITY RESPONSE</p>
+    <h1>Welcome, {{ name }}.</h1>
+    <p>You are signed in as a <strong>{{ role|capitalize }}</strong>. Your community updates and response tools will appear here.</p>
+    <form action="{{ url_for('logout') }}" method="post"><button class="submit-button" type="submit">Sign out</button></form>
+  </main>
+</body>
+</html>
